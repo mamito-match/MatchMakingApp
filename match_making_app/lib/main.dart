@@ -28,8 +28,7 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Container(
             width: double.infinity,
-            child: Text('Hello World') ,
-              )
+            child: Text('Hello World'),
           ),
         ),
       ),
