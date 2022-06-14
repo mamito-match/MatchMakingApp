@@ -6,8 +6,8 @@ import './src/features/auth/presentation/SignUp.dart';
 import './src/features/auth/presentation/animation/FadeAnimation.dart';
 
 const String loginPage = 'login';
-const String welcomePage = 'login';
-const String signupPage = 'login';
+const String welcomePage = 'welcome';
+const String signupPage = 'signup';
 
 
 Route<dynamic> controller(RouteSettings settings){
