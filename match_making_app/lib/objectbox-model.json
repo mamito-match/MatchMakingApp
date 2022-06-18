@@ -1,0 +1,208 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6472301739385310921",
+      "lastPropertyId": "4:4083706776689490255",
+      "name": "Answer",
+      "properties": [
+        {
+          "id": "1:8744040036596885958",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8278282173521443409",
+          "name": "user_id",
+          "type": 6
+        },
+        {
+          "id": "3:5465040152070552051",
+          "name": "quiz_id",
+          "type": 6
+        },
+        {
+          "id": "4:4083706776689490255",
+          "name": "choice_id",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:1188853720646485139",
+      "lastPropertyId": "3:217690910082064715",
+      "name": "Choice",
+      "properties": [
+        {
+          "id": "1:8842073858731496021",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4596943297952682059",
+          "name": "value",
+          "type": 9
+        },
+        {
+          "id": "3:217690910082064715",
+          "name": "weight",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:9159601570021502883",
+      "lastPropertyId": "6:7976531580411381899",
+      "name": "CompatibilityLog",
+      "properties": [
+        {
+          "id": "1:5121168611169939021",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7301020072609838727",
+          "name": "user_id",
+          "type": 6
+        },
+        {
+          "id": "3:4562262347021482325",
+          "name": "compatible_user_id",
+          "type": 6
+        },
+        {
+          "id": "4:4044161026372032824",
+          "name": "date_stamp",
+          "type": 10
+        },
+        {
+          "id": "5:4453909198251476735",
+          "name": "percentage",
+          "type": 6
+        },
+        {
+          "id": "6:7976531580411381899",
+          "name": "difference",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5061761277555233049",
+      "lastPropertyId": "4:9201379737467929079",
+      "name": "Quiz",
+      "properties": [
+        {
+          "id": "1:5863082578607844649",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:347054291489039802",
+          "name": "question",
+          "type": 9
+        },
+        {
+          "id": "3:226317538043341897",
+          "name": "weight",
+          "type": 6
+        },
+        {
+          "id": "4:9201379737467929079",
+          "name": "choice_id",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:5124142928903474907",
+      "lastPropertyId": "12:4584239490190255432",
+      "name": "User",
+      "properties": [
+        {
+          "id": "1:6089875662408391639",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3182939628418991648",
+          "name": "firstName",
+          "type": 9
+        },
+        {
+          "id": "3:3314493759131318689",
+          "name": "lastName",
+          "type": 9
+        },
+        {
+          "id": "4:2251611690820482707",
+          "name": "age",
+          "type": 6
+        },
+        {
+          "id": "5:3178234555416737606",
+          "name": "gender",
+          "type": 9
+        },
+        {
+          "id": "6:3052925254038129445",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "7:7976769273959785358",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "8:2581139115555071114",
+          "name": "religion",
+          "type": 9
+        },
+        {
+          "id": "9:7224523908431479266",
+          "name": "address",
+          "type": 9
+        },
+        {
+          "id": "10:7264539978352266184",
+          "name": "education",
+          "type": 9
+        },
+        {
+          "id": "11:2311280138682069157",
+          "name": "employment",
+          "type": 9
+        },
+        {
+          "id": "12:4584239490190255432",
+          "name": "about",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:5124142928903474907",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
