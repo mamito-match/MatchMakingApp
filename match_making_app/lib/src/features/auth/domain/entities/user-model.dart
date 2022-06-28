@@ -14,8 +14,6 @@ class User {
   String education;
   String employment;
   String about;
-  String email;
-  String password;
 
   User({
     this.id = 0,
@@ -27,8 +25,6 @@ class User {
     required this.address,
     required this.education,
     required this.employment,
-    required this.about,
-    required this.email,
-    required this.password
+    required this.about
   });
 }

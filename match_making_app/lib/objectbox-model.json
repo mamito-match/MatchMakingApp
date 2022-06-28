@@ -156,16 +156,6 @@
           "type": 9
         },
         {
-          "id": "6:3052925254038129445",
-          "name": "email",
-          "type": 9
-        },
-        {
-          "id": "7:7976769273959785358",
-          "name": "password",
-          "type": 9
-        },
-        {
           "id": "8:2581139115555071114",
           "name": "religion",
           "type": 9
@@ -192,9 +182,38 @@
         }
       ],
       "relations": []
+    },
+    {
+      "id": "6:4370376266044418217",
+      "lastPropertyId": "4:8662178085288955513",
+      "name": "UserAuth",
+      "properties": [
+        {
+          "id": "1:5272269372904463803",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1148989859785802394",
+          "name": "userId",
+          "type": 6
+        },
+        {
+          "id": "3:6355105005577232512",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "4:8662178085288955513",
+          "name": "password",
+          "type": 9
+        }
+      ],
+      "relations": []
     }
   ],
-  "lastEntityId": "5:5124142928903474907",
+  "lastEntityId": "6:4370376266044418217",
   "lastIndexId": "0:0",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
@@ -202,7 +221,10 @@
   "modelVersionParserMinimum": 5,
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    3052925254038129445,
+    7976769273959785358
+  ],
   "retiredRelationUids": [],
   "version": 1
 }
