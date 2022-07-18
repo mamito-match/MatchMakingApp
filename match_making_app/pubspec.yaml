@@ -1,5 +1,5 @@
 name: match_making_app
-description: A new Flutter project.
+description: A match amking app.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.1.0
 
 dev_dependencies:
   flutter_test:
@@ -41,7 +42,9 @@ dev_dependencies:
   simple_animations: ^1.3.3
   build_runner: ^2.0.0
   objectbox_generator: any
-
+  equatable: ^2.0.0
+  flutter_bloc: ^7.0.0
+  formz: ^0.3.2
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -60,7 +63,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+    - assets/images/asset1.jpg
+    - assets/images/asset2.jpg
+    - assets/images/asset3.jpg
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

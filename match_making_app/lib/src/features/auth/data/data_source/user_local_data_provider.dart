@@ -1,9 +1,9 @@
 import 'dart:ffi';
 
 import '../../../../../objectbox.g.dart';
-import '../entities/auth-model.dart';
-import '../entities/response-model.dart';
-import '../entities/user-model.dart';
+import '../../domain/entities/auth-model.dart';
+import '../../domain/entities/response-model.dart';
+import '../../domain/entities/user-model.dart';
 
 class UserLocalDataProvider {
   Future<List<User>>? fetchUsers() {
@@ -13,7 +13,7 @@ class UserLocalDataProvider {
   Response registerUser(User user, String email, String password) {
     final store = openStore();
     late var box = store.box<User>();
-    Response response = Response(message: '',success: false as Bool);
+    Response response = Response(message: '', success: false as Bool);
     box.put(user);
 
     Query<User> query = box
@@ -34,9 +34,12 @@ class UserLocalDataProvider {
       response.success = true as Bool;
       response.message = "User Successfully Created";
       return response;
-    }
-    else {
+    } else {
       return response;
     }
+  }
+
+  Future<UserAuth?> currentUser() async {
+    return null;
   }
 }
